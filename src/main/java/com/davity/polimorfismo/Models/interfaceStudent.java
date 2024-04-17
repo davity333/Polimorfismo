@@ -1,9 +1,9 @@
 package com.davity.polimorfismo.Models;
 
 public interface interfaceStudent {
-        void initialize();
 
-        void save();
+        void save(Student student);
 
-        void update();
+        void update(Student student);
 }
+

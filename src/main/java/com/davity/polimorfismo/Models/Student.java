@@ -1,17 +1,15 @@
 package com.davity.polimorfismo.Models;
 
-public class student implements interfaceStudent{
+public class Student{
 
     private String name;
     private int edad;
     private String matricula;
 
-    public student(String name, int edad, String matricula) {
+    public Student(String name, int edad, String matricula) {
         this.name = name;
         this.edad = edad;
         this.matricula = matricula;
-    }
-    public student() {
     }
     public String getName() {
         return name;
@@ -38,17 +36,9 @@ public class student implements interfaceStudent{
     }
 
     @Override
-    public void initialize() {
-
-    }
-
-    @Override
-    public void save() {
-
-    }
-
-    @Override
-    public void update() {
-
+    public String toString() {
+        return "name='" + name + '\'' +
+                ", edad='" + edad + '\''+
+                ", matricula='" + matricula + '\'';
     }
 }

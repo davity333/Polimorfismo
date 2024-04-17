@@ -1,7 +1,7 @@
 package com.davity.polimorfismo;
 
-import com.davity.polimorfismo.Controllers.Politecnia;
-import com.davity.polimorfismo.Models.student;
+import com.davity.polimorfismo.Models.Student;
+import com.davity.polimorfismo.Models.Universidad;
 import javafx.application.Application;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 import org.kordamp.bootstrapfx.BootstrapFX;
 
 import java.io.IOException;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -20,25 +21,20 @@ public class App extends Application {
     private static Stage stageView;
     private static Stage stageRoot;
 
-    private ObservableList<student> EstudiantesUnam = FXCollections.observableArrayList();
-    private  ObservableList<student> EstudiantesPolitecnica = FXCollections.observableArrayList();
-    public ObservableList<student> getEstudiantesPolitecnica() {
-        return EstudiantesPolitecnica;
-    }
 
-    public void addEstudiantePolitecnica(student studiante){
-        EstudiantesPolitecnica.add(studiante);
-    }
+
 
     @Override
     public void start(Stage stage) throws IOException {
+        Universidad.inizialite(); //CREA LAS BASES DE DATOS
+
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("Alumnos.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Hello!");
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
-
+        System.out.println("hola mey");
     }
 
     private static Parent loadFXML(String fxml) throws IOException {
