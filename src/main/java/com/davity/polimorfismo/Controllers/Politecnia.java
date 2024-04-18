@@ -68,6 +68,7 @@ public class Politecnia {
         String matricula = txtMatricula.getText();
 
         Student student = new Student(name,edad,matricula);
+
         Universidad.addStudent(student);
 
         actualizartable();
@@ -78,10 +79,8 @@ public class Politecnia {
         alert.showAndWait();
     }
 
-        public void actualizartable(){ //HACER BOTON PARA ACTUALIZAR CUANDO AGREUE DATOS DESDE OTRA VENTANA
-
-
-            tablaEstudiantes.getItems().setAll(Universidad.ListaLectura(0));
+        public void actualizartable(){
+        tablaEstudiantes.getItems().setAll(Universidad.ListaLectura(0));
         }
 
     @FXML

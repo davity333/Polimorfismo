@@ -26,7 +26,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        Universidad.inizialite(); //CREA LAS BASES DE DATOS
+        Universidad.inizialite();
 
         FXMLLoader fxmlLoader = new FXMLLoader(App.class.getResource("Alumnos.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
@@ -34,7 +34,7 @@ public class App extends Application {
         stage.setScene(scene);
         stage.show();
         stage.setResizable(false);
-        System.out.println("hola mey");
+        System.out.println("hola ali");
     }
 
     private static Parent loadFXML(String fxml) throws IOException {

@@ -12,6 +12,7 @@ public class Bd1 implements interfaceStudent{
         baseDato1.add(student);
         System.out.println(student);
     }
+
     @Override
     public void update(Student student) {
         for(Student s: baseDato1){

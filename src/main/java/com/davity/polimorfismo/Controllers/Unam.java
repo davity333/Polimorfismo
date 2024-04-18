@@ -50,7 +50,6 @@ public class Unam  {
         Student student = new Student(name,edad,matricula);
         Universidad.updateStudent(student);
 
-        //tablaEstudiantes.getItems().add(student);
         actualizartable();
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Advertencia");
@@ -97,7 +96,7 @@ public class Unam  {
     }
 
     public void initialize(){
-        System.out.println("mira ese wey");
+        System.out.println("SinSomer");
 
         columnaNombre.setCellValueFactory(new PropertyValueFactory<>("name"));
         columnaEdad.setCellValueFactory(new PropertyValueFactory<>("edad"));
@@ -115,9 +114,5 @@ public class Unam  {
     void onClickUnam(MouseEvent event) {
 
     }
-
-
-
-
 }
 

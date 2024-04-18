@@ -7,13 +7,13 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1001.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davity.polimorfismo.Controllers.Politecnia">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1001.0" style="-fx-background-color: #BDD7EE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.davity.polimorfismo.Controllers.Politecnia">
    <children>
-      <TableView fx:id="tablaEstudiantes" layoutX="70.0" layoutY="103.0" onMouseClicked="#onClickTablaEstudiantes" prefHeight="415.0" prefWidth="572.0">
+      <TableView fx:id="tablaEstudiantes" layoutX="70.0" layoutY="103.0" onMouseClicked="#onClickTablaEstudiantes" prefHeight="415.0" prefWidth="572.0" style="-fx-background-color: #9DC3E6;">
         <columns>
-          <TableColumn fx:id="columnaNombre" prefWidth="202.3999786376953" text="Nombre" />
-          <TableColumn fx:id="columnaEdad" prefWidth="206.4000244140625" text="Edad" />
-            <TableColumn fx:id="columnaMatricula" prefWidth="162.39996337890625" text="Matricula" />
+          <TableColumn fx:id="columnaNombre" prefWidth="202.3999786376953" style="-fx-background-color: #69A4D9;" text="Nombre" />
+          <TableColumn fx:id="columnaEdad" prefWidth="206.4000244140625" style="-fx-background-color: #69A4D9;" text="Edad" />
+            <TableColumn fx:id="columnaMatricula" prefWidth="162.39996337890625" style="-fx-background-color: #69A4D9;" text="Matricula" />
         </columns>
       </TableView>
       <TextField fx:id="txtNombre" layoutX="692.0" layoutY="161.0" prefHeight="39.0" prefWidth="248.0" promptText="INGRESA NOMBRE" />

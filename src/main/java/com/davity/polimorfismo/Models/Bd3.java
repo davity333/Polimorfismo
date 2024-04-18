@@ -19,5 +19,4 @@ public class Bd3 implements interfaceStudent{
             }
         }
     }
-
 }

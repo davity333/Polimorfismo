@@ -89,7 +89,7 @@ public class Unach  {
         Student student = new Student(name,edad,matricula);
         Universidad.updateStudent(student);
 
-        //tablaEstudiantes.getItems().add(student);
+
         actualizartable();
         Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
         alert.setTitle("Advertencia");
